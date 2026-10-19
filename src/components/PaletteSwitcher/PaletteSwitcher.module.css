@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.28571;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.option {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(18, 20, 23, 0.12);
+    border-radius: 50%;
+    color: var(--main);
+    transition: transform 250ms ease;
+}
+
+.option[aria-pressed='true'] {
+    outline: 1px solid var(--main);
+    outline-offset: 3px;
+}
+
+.option:focus-visible {
+    outline: 2px solid var(--main);
+    outline-offset: 3px;
+}
+
+.option:hover {
+    transform: scale(1.08);
+}
+
+.option svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .option {
+        transition: none;
+    }
+}

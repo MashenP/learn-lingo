@@ -1,0 +1,58 @@
+.header {
+    padding: 20px 0;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.logo {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 28px;
+}
+
+.link {
+    display: inline-block;
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    transition: color 250ms ease;
+}
+
+.link:hover,
+.link:focus-visible {
+    color: var(--button);
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: var(--button);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
+@media screen and (max-width: 767px) {
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
