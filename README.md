@@ -4,7 +4,7 @@
 
 **Find your teacher. Start your language journey.**
 
-[English](#english) · [Українська](#ukrainian) · [Design](https://www.figma.com/design/PK9PVsuMKvh48QvbVGzEUa/Learn-Lingo--Copy-?node-id=4-138) · [Specification](docs/project-specification.md)
+[Live demo](https://learn-lingo-plum-one.vercel.app/) · [English](#english) · [Українська](#ukrainian) · [Design](https://www.figma.com/design/PK9PVsuMKvh48QvbVGzEUa/Learn-Lingo--Copy-?node-id=4-138) · [Specification](docs/project-specification.md)
 
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -26,7 +26,7 @@ reviews, save your favorites, and request a trial lesson.
 Built with **React and TypeScript**, the application uses **Firebase** for
 accounts, teacher data, favorites, and trial lesson requests.
 
-**Live demo:**
+**Live demo:** [Explore LearnLingo](https://learn-lingo-plum-one.vercel.app/)
 
 ## ✨ Features
 
@@ -163,7 +163,7 @@ The project is prepared for Vercel: build command **`npm run build`**, output
 folder **`dist`**. Add the five environment variables before building. SPA route
 rewrites are configured in [`vercel.json`](vercel.json).
 
-**Deployment is pending.**
+**Hosted on Vercel:** [LearnLingo](https://learn-lingo-plum-one.vercel.app/)
 
 ## 👩‍💻 Author
 
@@ -182,7 +182,7 @@ LearnLingo — вебзастосунок для пошуку викладачі
 Застосунок створений на **React і TypeScript**. **Firebase** використовується для
 авторизації, даних викладачів, обраного та заявок на заняття.
 
-**Жива сторінка:**
+**Жива сторінка:** [Відкрити LearnLingo](https://learn-lingo-plum-one.vercel.app/)
 
 ## ✨ Основні можливості
 
@@ -320,7 +320,7 @@ src/
 результату — **`dist`**. Перед збіркою додайте п'ять змінних середовища.
 Перенаправлення для SPA-маршрутів задані у [`vercel.json`](vercel.json).
 
-**Деплой ще не виконано.**
+**Опубліковано на Vercel:** [LearnLingo](https://learn-lingo-plum-one.vercel.app/)
 
 ## 👩‍💻 Авторка
 
