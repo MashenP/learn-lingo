@@ -4,7 +4,7 @@
 
 **Find your teacher. Start your language journey.**
 
-[Live demo](https://learn-lingo-plum-one.vercel.app/) · [English](#english) · [Українська](#ukrainian) · [Design](https://www.figma.com/design/PK9PVsuMKvh48QvbVGzEUa/Learn-Lingo--Copy-?node-id=4-138) · [Specification](docs/project-specification.md)
+[Live demo](https://learn-lingo-plum-one.vercel.app/) · [English](#english) · [Українська](#ukrainian) · [Design](https://www.figma.com/file/dewf5jVviSTuWMMyU3d8Mc/) · [Specification](docs/project-specification.md)
 
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -149,7 +149,7 @@ src/
 
 ## 🎨 Design and requirements
 
-- [LearnLingo design in Figma](https://www.figma.com/design/PK9PVsuMKvh48QvbVGzEUa/Learn-Lingo--Copy-?node-id=4-138)
+- [LearnLingo design in Figma](https://www.figma.com/file/dewf5jVviSTuWMMyU3d8Mc)
 - [Project specification](docs/project-specification.md#english)
 - [Assignment teacher dataset](https://drive.google.com/file/d/121ufnYEerBdPopSSVw0W7iUJWT-4Zcfu/view)
 
@@ -306,7 +306,7 @@ src/
 
 ## 🎨 Макет і вимоги
 
-- [Макет LearnLingo у Figma](https://www.figma.com/design/PK9PVsuMKvh48QvbVGzEUa/Learn-Lingo--Copy-?node-id=4-138)
+- [Макет LearnLingo у Figma](https://www.figma.com/file/dewf5jVviSTuWMMyU3d8Mc)
 - [Технічне завдання](docs/project-specification.md#ukrainian)
 - [Дані викладачів із завдання](https://drive.google.com/file/d/121ufnYEerBdPopSSVw0W7iUJWT-4Zcfu/view)
 

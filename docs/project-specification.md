@@ -99,8 +99,7 @@ React або Next.js із TypeScript; адаптивна семантична в
 
 ## Source materials / Джерела
 
-- [Original assignment design / Початковий макет](https://www.figma.com/file/dewf5jVviSTuWMMyU3d8Mc/)
-- [Working design copy / Робоча копія макета](https://www.figma.com/design/PK9PVsuMKvh48QvbVGzEUa/Learn-Lingo--Copy-?node-id=4-138)
+- [Original assignment design / Початковий макет](https://www.figma.com/file/dewf5jVviSTuWMMyU3d8Mc)
 - [Teacher dataset / Дані викладачів](https://drive.google.com/file/d/121ufnYEerBdPopSSVw0W7iUJWT-4Zcfu/view)
 
 [Back to README / До README](../README.md)
