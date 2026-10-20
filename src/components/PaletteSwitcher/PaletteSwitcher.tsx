@@ -8,25 +8,35 @@ interface PaletteSwitcherProps {
 }
 
 function PaletteSwitcher({ palette, onPaletteChange }: PaletteSwitcherProps) {
-
     return (
         <div className={css.container}>
-            <span className={css.label} id="palette-label">Palette</span>
-            <div className={css.options} role="group" aria-labelledby="palette-label">
+            <span className={css.label} id="color-scheme-label">
+                Color scheme
+            </span>
+            <div
+                className={css.options}
+                role="group"
+                aria-labelledby="color-scheme-label"
+            >
                 {palettes.map(({ id, label, color }) => (
                     <button
                         className={css.option}
                         key={id}
                         type="button"
                         style={{ backgroundColor: color }}
-                        aria-label={`${label} palette`}
+                        aria-label={`${label} color scheme`}
                         aria-pressed={palette === id}
-                        title={`${label} palette`}
+                        title={`${label} color scheme`}
                         onClick={() => onPaletteChange(id)}
                     >
                         {palette === id && (
-                            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
-                                <path d="m4 8 3 3 5-6" />
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                aria-hidden="true"
+                            >
+                                <use href="/sprite.svg#icon-check" />
                             </svg>
                         )}
                     </button>

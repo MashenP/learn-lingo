@@ -1,0 +1,13 @@
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "tabWidth": 4,
+  "overrides": [
+    {
+      "files": ["*.json", "*.md", "*.html"],
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
+}

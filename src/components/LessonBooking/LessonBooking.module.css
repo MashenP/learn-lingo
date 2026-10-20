@@ -1,0 +1,82 @@
+.description {
+    margin-bottom: 20px;
+}
+.teacher {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 32px;
+    font-weight: 500;
+}
+.teacher img {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.3333333333;
+    color: var(--text);
+}
+.reasons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 0;
+    margin-bottom: 14px;
+    border: none;
+}
+.reasons legend {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.reasons label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 1.375;
+    cursor: pointer;
+}
+.reasons input {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 50%;
+    background-image: radial-gradient(
+        circle,
+        transparent 8px,
+        rgba(18, 20, 23, 0.2) 8px 10px,
+        transparent 10px
+    );
+    appearance: none;
+    cursor: pointer;
+}
+.reasons input:checked {
+    background-image: radial-gradient(
+        circle,
+        var(--button) 5px,
+        transparent 5px 8px,
+        var(--button) 8px 10px,
+        transparent 10px
+    );
+}
+
+@media screen and (min-width: 768px) {
+    .teacher {
+        margin-bottom: 40px;
+    }
+    .reasons {
+        margin-bottom: 22px;
+    }
+    .reasons legend {
+        font-size: 24px;
+        line-height: 1.3333333333;
+    }
+}

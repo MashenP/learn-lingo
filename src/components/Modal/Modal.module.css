@@ -1,0 +1,53 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    padding: 16px;
+    overflow-y: auto;
+    background-color: rgba(18, 20, 23, 0.5);
+}
+.modal {
+    flex-shrink: 0;
+    width: min(566px, 100%);
+    max-height: calc(100dvh - 32px);
+    padding: 0;
+    margin: auto;
+    overflow-y: auto;
+    border: none;
+    border-radius: 30px;
+    color: var(--main);
+    background-color: var(--white);
+    overscroll-behavior: contain;
+}
+.wide {
+    width: min(600px, 100%);
+}
+.content {
+    position: relative;
+    padding: 64px 20px 32px;
+}
+.close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    display: grid;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+}
+.close svg {
+    fill: none;
+    stroke: currentColor;
+}
+@media screen and (min-width: 375px) {
+    .content {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .content {
+        padding: 64px;
+    }
+}

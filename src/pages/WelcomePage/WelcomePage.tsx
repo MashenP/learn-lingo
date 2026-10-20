@@ -19,11 +19,14 @@ function WelcomePage({ palette }: WelcomePageProps) {
                         <span className={css.highlight}>language</span> tutors
                     </h1>
                     <p className={css.description}>
-                        Embark on an Exciting Language Journey with Expert Language Tutors:
-                        Elevate your language proficiency to new heights by connecting
-                        with highly qualified and experienced tutors.
+                        Embark on an Exciting Language Journey with Expert
+                        Language Tutors: Elevate your language proficiency to
+                        new heights by connecting with highly qualified and
+                        experienced tutors.
                     </p>
-                    <Link className={css.btn} to="/teachers">Get started</Link>
+                    <Link className={css.btn} to="/teachers">
+                        Get started
+                    </Link>
                 </div>
                 <div className={css.imageContainer}>
                     <img

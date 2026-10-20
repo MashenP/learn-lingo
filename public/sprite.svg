@@ -41,5 +41,15 @@
 <symbol id="icon-burger" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M5.333 8h21.333M5.333 16h10.667M5.333 24h21.333"></path>
 </symbol>
+<symbol id="icon-check" viewBox="0 0 16 16">
+<path d="m4 8 3 3 5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</symbol>
+<symbol id="icon-online" viewBox="0 0 12 12">
+<circle cx="6" cy="6" r="6" fill="#fff" />
+<circle cx="6" cy="6" r="4" fill="#38cd3e" />
+</symbol>
+<symbol id="stats-border" viewBox="0 0 1312 116" preserveAspectRatio="none">
+<rect x="0.75" y="0.75" width="1310.5" height="114.5" rx="29.25" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="15 15" />
+</symbol>
 </defs>
 </svg>

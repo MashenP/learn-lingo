@@ -1,0 +1,52 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "teachers": {
+      ".read": true,
+      ".write": false
+    },
+    "users": {
+      "$uid": {
+        "favorites": {
+          ".read": "auth != null && auth.uid === $uid",
+          "$teacherId": {
+            ".write": "auth != null && auth.uid === $uid",
+            ".validate": "newData.val() === true && root.child('teachers').child($teacherId).exists()"
+          }
+        }
+      }
+    },
+    "lessonRequests": {
+      "$requestId": {
+        ".read": false,
+        ".write": "!data.exists() && newData.exists()",
+        ".validate": "newData.hasChildren(['teacherId', 'name', 'email', 'phone', 'reason', 'createdAt'])",
+        "teacherId": {
+          ".validate": "newData.isString() && root.child('teachers').child(newData.val()).exists()"
+        },
+        "name": {
+          ".validate": "newData.isString() && newData.val().length >= 2 && newData.val().length <= 100"
+        },
+        "email": {
+          ".validate": "newData.isString() && newData.val().length <= 254 && newData.val().contains('@')"
+        },
+        "phone": {
+          ".validate": "newData.isString() && newData.val().length >= 7 && newData.val().length <= 25"
+        },
+        "reason": {
+          ".validate": "newData.val() === 'Career and business' || newData.val() === 'Lesson for kids' || newData.val() === 'Living abroad' || newData.val() === 'Exams and coursework' || newData.val() === 'Culture, travel or hobby'"
+        },
+        "createdAt": {
+          ".validate": "newData.isNumber() && newData.val() === now"
+        },
+        "userId": {
+          ".validate": "auth != null && newData.val() === auth.uid"
+        },
+        "$other": {
+          ".validate": false
+        }
+      }
+    }
+  }
+}

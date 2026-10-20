@@ -10,14 +10,25 @@ const statistics = [
 function PlatformStats() {
     return (
         <section className="container" aria-label="LearnLingo in numbers">
-            <ul className={css.list}>
-                {statistics.map(({ value, label }) => (
-                    <li className={css.item} key={label}>
-                        <p className={css.count}>{value}</p>
-                        <p className={css.text}>{label}</p>
-                    </li>
-                ))}
-            </ul>
+            <div className={css.frame}>
+                <svg
+                    className={css.border}
+                    aria-hidden="true"
+                    focusable="false"
+                    viewBox="0 0 1312 116"
+                    preserveAspectRatio="none"
+                >
+                    <use href="/sprite.svg#stats-border" />
+                </svg>
+                <ul className={css.list}>
+                    {statistics.map(({ value, label }) => (
+                        <li className={css.item} key={label}>
+                            <p className={css.count}>{value}</p>
+                            <p className={css.text}>{label}</p>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </section>
     );
 }

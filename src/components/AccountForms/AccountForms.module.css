@@ -1,0 +1,109 @@
+.title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+.description {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.375;
+    color: rgba(18, 20, 23, 0.8);
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+}
+.input {
+    width: 100%;
+    height: 54px;
+    padding: 15px 18px;
+    border: 1px solid rgba(18, 20, 23, 0.1);
+    border-radius: 12px;
+    background-color: var(--white);
+    font-size: 16px;
+    line-height: 1.375;
+}
+.input::placeholder {
+    color: var(--main);
+    opacity: 1;
+}
+.input[aria-invalid='true'] {
+    border-color: var(--error);
+}
+.password {
+    position: relative;
+}
+.password input {
+    padding-right: 56px;
+}
+.password input[type='text'] {
+    -webkit-text-security: none;
+}
+.passwordToggle {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    z-index: 1;
+    display: grid;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+}
+.passwordToggle svg {
+    pointer-events: none;
+}
+.error {
+    font-size: 13px;
+    line-height: 1.4;
+    color: var(--error);
+}
+.submit {
+    width: 100%;
+    margin-top: 22px;
+}
+.switch {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+.switch button {
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.switch {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.switch button {
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+@media screen and (min-width: 375px) {
+    .title {
+        font-size: 32px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .title {
+        font-size: 40px;
+    }
+    .description {
+        margin-bottom: 40px;
+    }
+}

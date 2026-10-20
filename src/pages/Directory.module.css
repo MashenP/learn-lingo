@@ -1,0 +1,37 @@
+.page {
+    min-height: 70vh;
+    padding: 24px 0 48px;
+    background-color: var(--background);
+}
+.title {
+    margin-bottom: 32px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.1428571429;
+    letter-spacing: -0.02em;
+}
+.notice {
+    margin-top: 24px;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: var(--white);
+}
+.notice button {
+    margin-left: 12px;
+    text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+    .page {
+        padding-top: 32px;
+        padding-bottom: 64px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .page {
+        min-height: calc(100vh - 88px);
+        padding: 8px 0 96px;
+    }
+    .page .container {
+        max-width: 1312px;
+    }
+}

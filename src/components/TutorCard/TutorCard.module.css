@@ -1,0 +1,216 @@
+.card {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    padding: 20px;
+    border-radius: 24px;
+    background-color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.avatarContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border: 3px solid var(--accent-light);
+    border-radius: 50%;
+}
+.avatarBadge {
+    position: absolute;
+    top: 16px;
+    left: 82px;
+    width: 12px;
+    height: 12px;
+    pointer-events: none;
+}
+.content {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.nameContainer {
+    min-width: 0;
+}
+.muted {
+    color: var(--text);
+}
+.title {
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1;
+}
+.metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.metrics li {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.lineIcon {
+    fill: none;
+    stroke: currentColor;
+}
+.price {
+    color: #38cd3e;
+}
+.heart {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: grid;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+}
+.heart svg {
+    fill: none;
+    stroke: var(--main);
+}
+.saved svg {
+    fill: var(--button);
+    stroke: var(--button);
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.languages {
+    text-decoration: underline;
+}
+.readMore {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.experience {
+    margin: 16px 0 32px;
+    font-weight: 400;
+}
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.review {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.reviewHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.reviewDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.initial {
+    display: grid;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--accent-light);
+    place-items: center;
+}
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 1.2857142857;
+}
+.levels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 32px;
+}
+.level {
+    padding: 7px 11px;
+    border: 1px solid rgba(18, 20, 23, 0.2);
+    border-radius: 35px;
+    font-size: 14px;
+    line-height: 1.1428571429;
+}
+.selected {
+    border-color: transparent;
+    background-color: var(--button);
+}
+.book {
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-top: 32px;
+}
+@media screen and (min-width: 768px) {
+    .card {
+        grid-template-columns: 120px minmax(0, 1fr);
+        padding: 24px;
+    }
+    .header {
+        margin-bottom: 32px;
+    }
+    .metrics {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px 24px;
+    }
+    .book {
+        width: auto;
+        padding-right: 48px;
+        padding-left: 48px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .card {
+        gap: 48px;
+    }
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 24px;
+        padding-right: 90px;
+    }
+    .metrics {
+        flex-shrink: 0;
+        flex-wrap: nowrap;
+        gap: 32px;
+    }
+    .metrics li {
+        white-space: nowrap;
+    }
+    .metrics li + li::before {
+        position: absolute;
+        top: 4px;
+        left: -16px;
+        width: 1px;
+        height: 16px;
+        background-color: rgba(18, 20, 23, 0.2);
+        content: '';
+    }
+    .metrics li:last-child {
+        font-weight: 600;
+    }
+}

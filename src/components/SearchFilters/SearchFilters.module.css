@@ -1,0 +1,88 @@
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+}
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+}
+.field label {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2857142857;
+    color: var(--text);
+}
+.selectContainer {
+    position: relative;
+}
+.selectContainer select {
+    width: 100%;
+    height: 48px;
+    padding: 14px 42px 14px 18px;
+    border: none;
+    border-radius: 14px;
+    background-color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.1111111111;
+    text-overflow: ellipsis;
+    appearance: none;
+    cursor: pointer;
+}
+.selectContainer select.selected {
+    background-color: var(--accent-light);
+}
+.selectContainer svg {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    pointer-events: none;
+}
+.reset {
+    min-height: 48px;
+    padding: 12px 18px;
+    border-radius: 14px;
+    background-color: var(--button);
+    font-size: 14px;
+    font-weight: 500;
+}
+.reset:hover {
+    background-color: var(--button-hover);
+}
+.reset {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 18px;
+    border-radius: 14px;
+    background-color: var(--button);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.reset:hover {
+    background-color: var(--button-hover);
+}
+
+@media screen and (min-width: 768px) {
+    .reset {
+        width: auto;
+    }
+    .filters {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    .field {
+        width: 221px;
+    }
+    .level {
+        width: 198px;
+    }
+    .price {
+        width: 124px;
+    }
+}

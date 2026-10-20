@@ -1,0 +1,23 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 32px;
+}
+.more {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 40px auto 0;
+}
+.error {
+    margin-top: 24px;
+    color: var(--error);
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+    .more {
+        width: 183px;
+        margin-top: 64px;
+    }
+}
